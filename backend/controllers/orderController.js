@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
  */
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "https://react-mern-frontend-wsnb.onrender.com/"
+    const frontend_url = "https://react-mern-frontend-wsnb.onrender.com"
     try {
         const newOrder = new orderModel({
             userId:req.body.userId,
